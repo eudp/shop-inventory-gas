@@ -31,7 +31,7 @@ function doPost(request) {
 
   if (type === "application/json" && contents) {
     jsonData = JSON.parse(contents);
-    processPostResponse(jsonData.id, jsonData.stock);
+    processPostResponse(jsonData.id, jsonData.quantity);
   }
 
   return HtmlService.createHtmlOutput(
